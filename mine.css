@@ -71,6 +71,13 @@ button{
     top: 0px;
     left: 600px;
 }
+.click{
+    position: absolute;
+    top: 49%;
+    left: 35%;
+    color: yellow;
+    font-size: 20px;
+}
 @keyframes motion {
     /* 0% { transform: translate(0px,0px); }
     25% { transform: translate(679px,679px); }
