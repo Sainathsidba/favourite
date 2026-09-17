@@ -57,9 +57,13 @@ body{
     text-transform: capitalize;
 }
 button{
+    background-color: blue;
+    border: none;
+    color: white;
     position: relative;
     top: 15px;
     left: 5px;
+
 }
 @keyframes motion {
     /* 0% { transform: translate(0px,0px); }
