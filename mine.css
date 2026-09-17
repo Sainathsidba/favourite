@@ -36,10 +36,11 @@ body{
     height: min-content;
     position: absolute;
     top: 33%;
-    left: 18%;
+    left: 20%;
     z-index: 1;
 }
 .greeting{
+    position:relative;
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
@@ -47,12 +48,15 @@ body{
     text-transform: capitalize;
 }
 .main{
-    font-size: medium;
+    font-size:  18px;
+    font-family: Helvetica;
+    font-weight: bolder;
     position: relative;
-    top: 5px;
+    top:90%;
     left: 15px;
     color: white;
 }
+
 @keyframes motion {
     /* 0% { transform: translate(0px,0px); }
     25% { transform: translate(679px,679px); }
