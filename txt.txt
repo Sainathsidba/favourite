@@ -1,0 +1,8 @@
+<script>
+  document.body.addEventListener("click", function() {
+    const player = document.getElementById("ytplayer").contentWindow;
+    player.postMessage('{"event":"command","func":"unMute","args":""}', '*');
+    player.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+  });
+</script>
+<!-- <iframe class="video-background" src="https://www.youtube.com/embed/NeXbmEnpSz0?si=UK6R5ne2MVM2-Xqp&autoplay=1&loop=1&controls=0&rel=0&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->

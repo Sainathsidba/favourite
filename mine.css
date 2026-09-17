@@ -1,0 +1,64 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    background-color: black;
+}
+.nav_bar{
+    color: white;
+    height: max-content;
+    width: 90vw;
+    text-transform: capitalize;
+    font-size: large;
+    position:absolute;
+    top: 30px;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container{
+    opacity: 0.8;
+    position: relative;
+    top: -100px;
+    left: -100px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    filter: blur(100px);
+    background-color: rgb(47, 47, 242);
+    color: white;
+    text-transform: capitalize;
+    z-index: -1;
+    animation: motion 6s ease-in-out 0s infinite forwards ;
+}
+.text{
+    height: min-content;
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    z-index: 1;
+}
+.greeting{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: xxx-large;
+    text-transform: capitalize;
+}
+.main{
+    font-size: medium;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    color: white;
+}
+@keyframes motion {
+    /* 0% { transform: translate(0px,0px); }
+    25% { transform: translate(679px,679px); }
+    50%{transform: translate(0px,-679px);}
+    100%{transform: translate(0px,0px);} */
+    0%   { top: 0px; left: 0px; }
+    50%  { top: 200px; left: 100px; }
+    100% { top: 0px; left: 0px; }
+}
