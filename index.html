@@ -27,6 +27,9 @@
      <div class="click">
         click anywhere on the screen you feel so
      </div>
+       <h1 id="heading">Hello, World!</h1>
+        <button id="myButton">Click me</button>
+        <button id="myButton2">Refresh</button>
     <div class="container">
 
         
@@ -42,6 +45,19 @@ const music = document.getElementById("bgMusic");
 document.addEventListener("click", function () {
     music.play();
 }, { once: true });
+document.getElementById('myButton').onclick = function() {
+    document.getElementById('heading').textContent = 'where you have clicked the button';
+    document.getElementById('myButton').style.backgroundColor = 'green';
+    document.getElementById('myButton').style.color = 'white';
+    document.getElementById('heading').style.color = 'white';
+    document.getElementById('heading').style.backgroundColor = 'blue';
+    document.getElementById('heading').style.width = 'fit-content';
+    document.getElementById('heading').style.padding = '10px';
+    document.getElementById('myButton2').style.opacity = '1';
+    console.log("how are you?");
+}
+document.getElementById('myButton2').onclick = function() {
+    location.reload();}
 </script>
 </body>
 </html>

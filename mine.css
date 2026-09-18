@@ -78,6 +78,44 @@ button{
     color: yellow;
     font-size: 20px;
 }
+#myButton{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#myButton2{
+    opacity: 0;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    border:none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+h1:hover{
+    background-color: rgb(192, 188, 188);
+    color: black;
+}
+#myButton:hover{
+    background-color:blue;
+    color:white;
+}
 @keyframes motion {
     /* 0% { transform: translate(0px,0px); }
     25% { transform: translate(679px,679px); }
